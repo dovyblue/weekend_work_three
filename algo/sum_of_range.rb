@@ -3,7 +3,7 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+  
 end
 
 # Driver code - don't touch anything below this line.
