@@ -24,11 +24,28 @@ class HotelReservation
     @amenities << amenity
   end
 end
-
+  
 
 # Write your own driver code below! Make sure your code tests the following:
 # The ability to change a room number even after a reservation has already been created
 # The add_a_fridge method
 # The add_a_crib method
 # The add_a_custom_amenity method
+
+reservation = HotelReservation.new(
+  customer_name: "David", 
+  date: "03-18-2017", 
+  room_number: 403
+)
+p reservation.room_number 
+p reservation.room_number = 509
+
+p reservation.amenities
+reservation.add_a_fridge
+reservation.add_a_crib
+reservation.add_a_custom_amenity("couch")
+p reservation.amenities
+
+
+
 
